@@ -1,9 +1,11 @@
+
 import { filterByRol } from "./data.js";
+import { orderNames } from "./data.js";
 
 import data from "./data/lol/lol.js";
 
 const champions = Object.values(data.data);
-//console.log(champions);
+
 
 const print = (champions) =>{
   let contenedor = document.getElementById("card");
@@ -21,36 +23,41 @@ const print = (champions) =>{
     championContainer.appendChild(parrafoName);
     championContainer.appendChild(parrafoRol);
     contenedor.appendChild(championContainer);
-
+    });
+    /*champions.forEach(information => {
     let infoContainer = document.createElement("div");
     infoContainer.classList.add("information");
     const parrafoAttack = document.createElement("p");
-    parrafoAttack.appendChild(document.createTextNode("Attack:" + " " + element.info.attack));
+    parrafoAttack.appendChild(document.createTextNode("Attack:" + " " + information.info.attack));
     const parrafoDefense = document.createElement("p");
-    parrafoDefense.appendChild(document.createTextNode("Defense:" + " " + element.info.defense));
+    parrafoDefense.appendChild(document.createTextNode("Defense:" + " " + information.info.defense));
     const parrafoMagic = document.createElement("p");
-    parrafoMagic.appendChild(document.createTextNode("Magic:" + " " + element.info.magic));
+    parrafoMagic.appendChild(document.createTextNode("Magic:" + " " + information.info.magic));
     const parrafoDifficulty = document.createElement("p");
-    parrafoDifficulty.appendChild(document.createTextNode("Difficulty:" + " " + element.info.difficulty));
+    parrafoDifficulty.appendChild(document.createTextNode("Difficulty:" + " " + information.info.difficulty));
     infoContainer.appendChild(parrafoAttack);
     infoContainer.appendChild(parrafoDefense);
     infoContainer.appendChild(parrafoMagic);
     infoContainer.appendChild(parrafoDifficulty);
     contenedor.appendChild(infoContainer);
-   });
+    //contenedor.appendChild(contenedor);
+  });*/
+    
 }
-     
-/* --------Menu--------*/
+
+/* --------Hover--------*/
 
 
-//var burgerMenu = document.getElementById('burger-menu');
-//var show = document.getElementById('menu');
-//var menuRol = document.getElementById('menuRol');
-
-//burgerMenu.addEventListener('click', function(){
-    //this.classList.toggle("close");
-    //show.classList.toggle("show");
-//})
+/* --------Ordenar de la A-Z y Z-A--------*/
+let order = document.querySelector('.orderLol');
+order.addEventListener('click', function(e){
+  const btnOrder = e.target.textContent;
+  console.log(btnOrder)
+  const filterData =filterByRol(champions)
+  const orderData = orderNames(champions,btnOrder);
+  console.log(orderData)
+  print (orderData);
+});
 
 /* --------Filtro--------*/
 
