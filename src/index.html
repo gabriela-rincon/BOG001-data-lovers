@@ -13,39 +13,52 @@
 
 <body>
   <header>
-    <img src="/img/logo.png" alt="" class="imgLogo">
-    <label for="show-menu" class="show-menu">Desplegar Menu</label>
-    <input type="checkbox" id="show-menu" role="button">
-    
-      <ul class="menu">
-          <li><a href="#">Inicio</a></li>
-            <li><a href="#" class="menuRol">Roles</a>
-              <ul class="rolesLol">
-                <li><a href="#">Mage</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Fighter</a></li>
-                <li><a href="#">Tank</a></li>
-                <li><a href="#">Assassin</a></li>
-                <li><a href="#">Marksman</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Ordenar</a></li>
+    <div class="bbt-menu">
+      <nav>
+        <img src="/img/logo.png" alt="" class="imgLogo">
+        <label for="drop" class="toggle">Menu <span>&#9776;</span></label>
+        <input type="checkbox" id="drop" />
+        <ul class="menu">
+          <li><a href="/">Home</a></li>
+          <!--<li><a href='#'>About</a></li>-->    
+          <li> 
+            <!-- First Tier Drop Down -->
+            <label for="drop-1" class="toggle">Roles <span>&#9776;</span></label>
+            <a href="#">Roles &#9776;</a>
+            <input type="checkbox" id="drop-1"/>
+            <ul class="rolesLol">
+              <li><a href="#">Mage</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Fighter</a></li>
+              <li><a href="#">Tank</a></li>
+              <li><a href="#">Assassin</a></li>
+              <li><a href="#">Marksman</a></li>
+            </ul>
+          </li> 
+          <li>    
+            <!-- First Tier Drop Down -->
+            <label for="drop-2" class="toggle">Ordenar <span>&#9776;</span></label>
+            <a href="#">Ordenar &#9776;</a>
+            <input type="checkbox" id="drop-2"/>
             <ul class="orderLol">
               <li><a href="#">A-Z</a></li>
               <li><a href="#">Z-A</a></li>
             </ul>
-          <li><a href="#">Estadistica</a></li>
+          </li>
+          
         </ul>
-       
-  </header>
+      </nav>
+      </div>
+    
+</header>
+  
   <main>
+    <br><br>
     <p>League of Legends es un juego de estrategia por equipos en el que dos equipos conformados por cinco poderosos
       campeones se enfrentan para destruir la base del otro. Elige de entre más de 140 campeones para realizar jugadas
       épicas, asegurar asesinatos y destruir torretas mientras avanzas hacia la victoria.</p>
 
-     
-        
-      <div class="container">
+     <div class="container">
           <div class="card" id="card">
             <div class="face championContainer" id="champions"></div>
             <div class="face infoContainer" id="information"></div>

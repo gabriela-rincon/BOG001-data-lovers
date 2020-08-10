@@ -1,23 +1,21 @@
-import { example, anotherExample } from '../src/data.js';
+import { filterByRol } from '../src/data.js';
 
+const pruebaRol = [{
+  name: "Aatrox",
+  tags: ["Fighter", "Tank"],
+},
+{name: "Ahri",
+  tags: ["Mage", "Assassin"],
+},
+  {name: "Akali",
+  tags: ["Assassin"],
+}];
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+ describe('filterByRol', () => {
+  it('deberia ser una funcion', () => {
+    expect(typeof filterByRol).toBe('function');
   });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
-
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('debería retornar [{name:"Aatrox",tags: ["Fighter", "Tank"]}] para tipo Fighter', () => {
+    expect(filterByRol(pruebaRol,"Fighter")).toEqual([{name:"Aatrox",tags: ["Fighter", "Tank"]}]);
   });
 });

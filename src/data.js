@@ -1,7 +1,7 @@
 
 /* --------Filtar por Rol--------*/
 
-export const filterByRol = (data,option) =>{
+  export const filterByRol = (data,option) =>{
   const filter = data.filter((rol) => rol.tags.join("").includes (option));
   return filter;
   }

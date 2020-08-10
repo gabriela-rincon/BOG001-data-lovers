@@ -2,6 +2,7 @@
 import { filterByRol } from "./data.js";
 import { orderNames } from "./data.js";
 
+
 import data from "./data/lol/lol.js";
 
 const champions = Object.values(data.data);
@@ -42,20 +43,13 @@ const print = (champions) =>{
     contenedor.appendChild(infoContainer);
     //contenedor.appendChild(contenedor);
   });*/
-    
 }
-
-/* --------Hover--------*/
-
 
 /* --------Ordenar de la A-Z y Z-A--------*/
 let order = document.querySelector('.orderLol');
 order.addEventListener('click', function(e){
   const btnOrder = e.target.textContent;
-  console.log(btnOrder)
-  const filterData =filterByRol(champions)
   const orderData = orderNames(champions,btnOrder);
-  console.log(orderData)
   print (orderData);
 });
 
@@ -65,7 +59,6 @@ let roles = document.querySelector(".rolesLol");
 roles.addEventListener('click', function(e){
 const btnRol = e.target.textContent;
 const filterData = filterByRol(champions,btnRol);
-//console.log(filterData);
 print (filterData);
 });
 
