@@ -115,7 +115,14 @@ el problema (o problemas) que tiene tu usuario.
 <figcaption>Prototipos de baja fidelidad</figcaption>
 </figure>
 
+#### Problemas detectados al solicitar Feedback del prototipo
+
+* Hacer filtro por roles y no por niveles de ataque.
+* En version movil mostrar de una a dos tarjetas para que no se vea amontonado.
+* Hacer otra opcion de ir al inicio ya que no es muy claro que es pulsando el logo.
+
 #### Prototipo de alta fidelidad
+
 
 <figure>
 <img width="500px" src="src/img/altaFidelidad.jpg">
@@ -137,7 +144,7 @@ el problema (o problemas) que tiene tu usuario.
 * [X] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
   en `README.md`.
 * [ ] Incluye link a Zeplin o Figma en `README.md`.
-* [ ] Incluye el listado de problemas que detectaste a través de tests de
+* [X] Incluye el listado de problemas que detectaste a través de tests de
   usabilidad en el `README.md`.
 * [X] UI: Muestra lista y/o tabla con datos y/o indicadores.
 * [X] UI: Permite ordenar data por uno o más campos (asc y desc).
