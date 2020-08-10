@@ -1,4 +1,7 @@
 # LEAGE OF LEGENDS
+<figure>
+<img width="500px" src="src/img/logo.jpg">
+</figure>
 
 ## Índice
 
@@ -81,13 +84,43 @@ el problema (o problemas) que tiene tu usuario.
 <figcaption>Primeros prototipos</figcaption>
 </figure>
 
+<figure>
+<img width="500px" src="src/img/Prototipo_Papel_1.jpg">
+<figcaption>Primeros prototipos</figcaption>
+</figure>
+
 #### Prototipo de baja fidelidad
+<figure>
+<img width="500px" src="src/img/bajafidelidad1.jpg">
+<figcaption>Prototipos de baja fidelidad</figcaption>
+</figure>
 
+<figure>
+<img width="500px" src="src/img/bajafidelidad2.jpg">
+<figcaption>Prototipos de baja fidelidad</figcaption>
+</figure>
 
+<figure>
+<img width="500px" src="src/img/bajafidelidad3.jpg">
+<figcaption>Prototipos de baja fidelidad</figcaption>
+</figure>
+
+<figure>
+<img width="500px" src="src/img/bajafidelidad4.jpg">
+<figcaption>Prototipos de baja fidelidad</figcaption>
+</figure>
+
+<figure>
+<img width="500px" src="src/img/bajafidelidad5.jpg">
+<figcaption>Prototipos de baja fidelidad</figcaption>
+</figure>
 
 #### Prototipo de alta fidelidad
 
-
+<figure>
+<img width="500px" src="src/img/altaFidelidad5.jpg">
+<figcaption>Prototipos de alta fidelidad</figcaption>
+</figure>
 
 ## 9. Checklist
 
@@ -99,9 +132,9 @@ el problema (o problemas) que tiene tu usuario.
   lines y branches.
 * [X] Incluye _Definición del producto_ clara e informativa en `README.md`.
 * [ ] Incluye historias de usuario en `README.md`.
-* [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+* [X] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
   `README.md`.
-* [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+* [X] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
   en `README.md`.
 * [ ] Incluye link a Zeplin o Figma en `README.md`.
 * [ ] Incluye el listado de problemas que detectaste a través de tests de
