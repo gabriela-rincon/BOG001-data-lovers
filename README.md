@@ -118,7 +118,7 @@ el problema (o problemas) que tiene tu usuario.
 #### Prototipo de alta fidelidad
 
 <figure>
-<img width="500px" src="src/img/altaFidelidad5.jpg">
+<img width="500px" src="src/img/altaFidelidad.jpg">
 <figcaption>Prototipos de alta fidelidad</figcaption>
 </figure>
 
