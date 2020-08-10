@@ -1,6 +1,6 @@
 # LEAGE OF LEGENDS
 <figure>
-<img width="500px" src="src/img/logo.jpg">
+<img width="500px" src="src/img/logo.jng">
 </figure>
 
 ## Índice
